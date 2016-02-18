@@ -32,7 +32,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 3000);
+    }, 2500);
 
 setTimeout(function(){
         $(".element3").css("display", "inherit");
@@ -44,7 +44,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 4000);
+    }, 3000);
 
 setTimeout(function(){
         $(".element4").css("display", "inherit");
@@ -56,7 +56,7 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 5000);
+    }, 3500);
 
 setTimeout(function(){
         $(".element5").css("display", "inherit");
@@ -68,17 +68,17 @@ setTimeout(function(){
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 6000);
+    }, 4000);
 
 	setTimeout(function(){
         $(".element6").css("display", "inherit");
         $(".element6").typed({
-            strings: ["\"iOS dev\",\n\"wine\",\n\"basenji's\",\n"],
+            strings: ["\"iOS dev\",\n\"wine\",\n\"basenji's\"\n"],
             typeSpeed: 1, // typing speed
             backDelay: 750, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite
             callback: function(){ } // call function after typing is done
         });
-    }, 7000);
+    }, 5000);
 
