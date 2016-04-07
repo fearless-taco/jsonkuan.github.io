@@ -1,25 +1,29 @@
 
 .muted,footer,hr:after,time,aside{color:#90908a}
 
-body{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;background-color:#272822;color:#f8f8f0;font-size:22px;padding:5rem 0 0 0;margin:0}header{position:fixed;top:0;left:0;width:100%;height:5rem;padding:0;margin:0;text-align:center;background-color:#272822;box-shadow:0 1rem 1rem #272822}footer{padding:2rem;text-align:center}section{padding-left:5rem;
-}
+h1{box-shadow: 0 0.1rem 0 #f8f8f0; color:#FFFFFF}
 
-p{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto;line-height:2rem}
+header{position:fixed;top:0;left:0;width:100%;height:5rem;padding:0;margin:0;text-align:center;background-color:#272822;box-shadow:0 1rem 1rem #272822}
+footer{padding:2rem;text-align:center}
+section{padding-left:5rem;}
 
-pre{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;overflow:auto;margin:1rem 0}
+body{font-family:Menlo;background-color:#FFFFFF;font-size:22px;padding:5rem 0 0 0;margin:0}
+pre{font-family:Menlo;font-color:#007400; overflow:auto;margin:1rem 0}
 
-kbd{color:#a6e22e}
+a{color:#1C4BB6;text-decoration:none}
+a:hover{color:#0E0EFF}
 
-a{color:#66d9ef;text-decoration:none}
 
-a:hover{color:#f92672}.text-center{text-align:center}.flex-justify{display:flex;flex-wrap:wrap;justify-content:space-between}.home{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center}.home 
+.home{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center}
+.home pre{font-family: Menlo; font-color:#700400; margin-top:2rem;display:inline-block;text-align:left;line-height:2rem;overflow:auto}
 
-pre{margin-top:2rem;display:inline-block;text-align:left;line-height:2rem;overflow:auto}.highlight{margin:0;padding:1rem;background-color:#31322c}.highlight 
+.element0{color:#C41A16}.element0:hover{color:#0E0EFF}
+.element1{color:#C41A16}.element1:hover{color:#0E0EFF}
 
-pre{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto}.hl.string{color:#e6db74}
-
-.element0{color:#e6db74}
-.element5{color:#f92672}
-.element6{color:#f92672}
-.element7{color:#f92672}
+.class{color:#AA0D91}
+.otherClass{color:#5C2699} 
+.strings{color:#C41A16}
+.comments{color:#007400} 
+.urls{#0E0EFF}
+.json{color:#1C4BB6}
 

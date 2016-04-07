@@ -33,24 +33,20 @@
 
 
 
-[
- {
-    "<a href="developer/ios.html"><span class="element0"></span></a>": {
-	  <span class="json">"name"</span> : <span class="json">"Jason Kuan""</span>, 
-	  <span class="json">"projects"</span> : <span class="json"><a href="developer/ios.html">"click here"</a></span> 
-    }
- },
- {
-    "<a href="contact/contact.html"><span class="element1"></span></a>": {
-	  <span class="json">"name"</span> : <span class="json">"Jason Kuan""</span>, 
-	  <span class="json">"age"</span> : <span class="json">"29"</span> 
-	  <span class="json">"more info"</span> : <span class="json"><a href="contact/contact.html">"click here"</a></span>
-    }
- }
-]
-   
+<span class="class">typealias</span> JasonKuan = <span class="otherClass">SoftwareEngineer</span> 
 
+<span class="class">class</span> Developer: <span class="otherClass">iOSDeveloper</span> { 
 
+	<span class="class">let</span> name = <span class="projectClassName">JasonKuan</span>
+	<span class="class">let</span> gitHub = <a href="http://github.com/jsonkuan"><span class="element0"></span></a>
+	<span class="class">let</span> myProjects = <span class="strings">"Under Construction"</span>
+
+  <span class="class">func</span> viewProjects() -> <span class="otherClass">String</span> { 
+	print(<span class="strings">"/Coming Soon.../"</span>) 
+	
+    <a href="../index.html"><span class="element1"></span></a> myProjects
+  }  
+}
 </pre>
 </div>
 
