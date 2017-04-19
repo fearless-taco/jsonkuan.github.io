@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>SoftWarLockEngineer</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta charset='utf-8'> 
+        <title>FortuNummer</title> 
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <div ng-controller="Controller">
-            Welcome!
+        <h1 class="font-kaushan-script">FortuNummer</h1>
+        <div class="parallax">
+            <div class="bg__red"></div> 
+            <div class="bg__purple"></div>
+            <div class="bg__paper"></div>
+            <div class="bg__purple"></div>
+            <div class="bg__red"></div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-        <script src="script.js"></script>
+
+        <main id="content">
+        <form id="pnum-form" class="form-position "action="#" >
+            <label id="inputLabel" for="personnummer">Enter Personnummer </label> <br />
+            <input id="input" type="text" name="personnummer" maxLength="13" pattern=".{13,13}" required placeholder="yyyymmdd-xxxx"  />       
+            <button id="eightball-button" type="submit">
+                <img src="images/eightball.png" width="100" height="100" alt="Tell Fortune!" />
+            </button>
+        </form>
+        </main>
+
+        <section id="form-result" class="form-position">
+            <p>Your Future...</p>
+            <p>
+            <span id="birthday-result">---</span> <br />
+            <span id="age-result">---</span> <br />
+            <span id="valid-input-result">---</span>
+            </p>
+            <button id="back-button">Back</button>
+        </section> 
+
+        <footer>
+            <div align="center" >
+                <img class="footer-image" src="images/paper.png" border="0" alt="Image got lost..." >
+            </div>
+
+        </footer>
+                <script src=script.js></script>
     </body>
 </html>
+
