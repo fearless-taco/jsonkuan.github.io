@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <title>Single Page Application</title>
+    </head>
+    <body ng-controller="HomeController">
+        <jsonk-hello-world></jsonk-hello-world>
+        <ul>
+            <li><a href="#!/">1</a></li>
+            <li><a href="#!/first">2</a></li>
+            <li><a href="#!/second">3</a></li>
+        </ul>
+        <ng-view></ng-view> 
+        <script src='bower_components/angular/angular.js'></script>
+        <script src='bower_components/angular-route/angular-route.js'></script> <!--Needs to be in middle because route needs angualar and out script needs route -->
+        <script src="script.js"></script>
+    </body>
+</html>
+
