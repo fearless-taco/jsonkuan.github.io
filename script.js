@@ -7,6 +7,9 @@ app.config(function ($routeProvider) {
     }).when('/fortunummer', {
         controller: 'FortunummerController',
         templateUrl: 'partials/fortunummer.html'
+    }).when('/resume', {
+        controller: 'HomeController',
+        templateUrl: 'partials/resume.html'
     }).otherwise({
         controller: 'HomeController',
         templateUrl: 'partials/home.html'
