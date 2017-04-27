@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+.font-kaushan-script {
+    font-family:'Kaushan Script', cursive;
+}
+
+/* Font-Stacking */
+label, p {
+    font-family: fantasy, monospace, sans-serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body{
+    background-color:#272822;
+    color:#f8f8f0;
+    font-size:22px;
+    padding:5rem 0 0 0;
+    margin:0
+}
+
+pre, span, a {
+    font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    overflow:auto;
+    margin:1rem 0
+    color: #66d9ef;
+}
+
+a {
+    color:#66d9ef;
+    text-decoration:none
+}
+
+a:hover {
+    color:#f92672
+}
+
+.text-center{
+    text-align:center
+}
+
+.flex-justify {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+
+.home {
+    position:absolute;top:0;left:0;width:100%;height:100%;text-align:center}
+    
+.home pre {
+    margin-top:2rem;
+    display:inline-block;
+    text-align:left;
+    line-height:2rem;
+    overflow:auto
+}
+
+.highlight {
+    margin:0;
+    padding:1rem;
+    background-color:#31322c
+    }
+    
+.highlight pre {
+    max-width:1200px;
+    padding:0 1rem;
+    margin-left:auto;
+    margin-right:auto
+    }
+
+.hl.string{color:#e6db74}
+
+
+form, section {
+    color: black;
+    text-align: center;
+}
+
+div[class*="bg__"]{
+    border: solid;
+    margin-bottom: 15px;
+    margin-right 10px;
+}
+
+h1 {
+    position: absolute;
+    margin-left: 5%;
+    color: white; 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 3em;
+    z-index: 1;
+} 
+
+
+main#content, section#form-result {
+    position: fixed; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+button#eightball-button {
+    background: transparent;
+    border: none; 
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+}
+
+button#eightball-button:hover {
+    border-style: inset;
+    border-radius: 40px;
+}
+
+section#form-result {
+    left: 0;
+    display: none;
+}
+
+.form-position {
+    background-color: rgb(35 33 50);
+    border: solid;
+    border-radius: 10px; 
+    margin-left: 50%;
+    padding: 20px 20px 20px 20px;
+    width: 250px;
+    margin-top: 10%;
+    transform: translate(-50%);
+}
+
+input#input {
+    margin-left:50%;
+    transform: translate(-50%);
+}
+
+
+.footer-image {
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%);
+} 
+
+/*Parallax Effect */
+[class*="bg__"] {
+    height: 50vh;
+    text-indent: -9999px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    &:nth-child(2n) {
+        box-shadow: inset 0 0 1em #111;
+    }
+}
+
+.parallax [class*="bg__"] {
+    position: relative;
+    height: 50vh;
+    text-indent: -9999px;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+.bg__red {
+    background-size: cover;
+    background-image: url(
+    "images/ahmad-dirini-176494.jpg "
+    );
+}
+
+.bg__purple{
+    background-size: cover;
+    background-image: url(
+    "images/purple.png "
+    );
+}
+
+.bg__paper{
+    background-size: 50%;
+    background-image: url(
+    "images/paper.png"
+    );
+}
+
+.bg__blue{
+    background-size: cover;
+    background-image: url(
+    "images/blue.png  "
+    );
+}
+
+
