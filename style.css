@@ -13,15 +13,17 @@ label, p {
 body{
     background-color:#272822;
     color:#f8f8f0;
-    font-size:22px;
+    font-size: 3.0vw;
     padding:0 0 0 0;
     margin:0
 }
 
 pre, a, span{
     font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
-    overflow:auto;
-    margin:1rem 0;
+}
+
+div#content {
+
 }
 
 a, span#my-name {
@@ -43,8 +45,8 @@ a:hover {
 }
 
 #resume-img {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
     margin-top: 10%;
     position: relative; 
     left: 50%;
@@ -64,35 +66,36 @@ a:hover {
 
 .home {
     position:absolute;
-    /*
-     *top:0;
-     *left:0;
-     */
+    background-image: url("images/imac.png");
+    background-position: center center;
+    background-size: 95%;
+    background-repeat: no-repeat;
     width:100%;
     height:100%;
-    text-align:center
 }
-    
+
 .home pre {
-    margin-top:2rem;
-    display:inline-block;
+    position: absolute; 
     text-align:left;
-    line-height:2rem;
-    overflow:auto
+    overflow:auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0 32% 0;
 }
 
 .highlight {
     margin:0;
     padding:1rem;
     background-color:#31322c
-    }
-    
+}
+
 .highlight pre {
     max-width:1200px;
     padding:0 1rem;
     margin-left:auto;
     margin-right:auto
-    }
+}
 
 .hl.string{color:#e6db74}
 
