@@ -1,4 +1,0 @@
-function foobar() {
-    //Do something
-}
-
