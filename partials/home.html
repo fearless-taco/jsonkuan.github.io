@@ -1,5 +1,5 @@
-<div class="home">
-<pre >
+<div class="home" ng-controller="HomeController">
+<pre id="json-content">
 
 
 {
@@ -10,7 +10,7 @@
   <span>View</span>: [
       <a href="#!/projects">My Apps</a>,
       <a href="#!/resume"><span>My Resume</span></a>,
-      <a href="#!/fortunummer">Your Fortunummer</a>
+      <span id="fortunummerToggle" ng-click="x()">Your Fortunummer</span>
   ]
 }
 </pre>
