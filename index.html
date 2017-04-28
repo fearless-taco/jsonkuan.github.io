@@ -12,7 +12,7 @@
         <a href="javascript:window.location.href=window.location.href"><img id="back-home" src="images/home_white.svg" alt="Back"/></a> 
         <ng-view></ng-view>
 
-        <main id="content">
+        <main id="content" class="centered">
         <form id="pnum-form" class="form-position" method="post" action="#">
             <label id="inputLabel" for="personnummer">Enter Personnummer </label> <br />
             <input id="input" ng-model="a" type="text" 
@@ -22,21 +22,19 @@
             </button>
         </form>
 
-        <div ng-controller="FortuController">
-            <pre id="form-result">
+            <pre id="form-result" class="centered">
 Your Future : {
         Birthday : "<span id="birthday-result"></span>",
         Age : "<span id="age-result">-</span>", 
         isValid : "<span id="valid-input-result">-</span>", 
         Predictions : [
-          "<span>{{predictA}}</span>",
+          "{{predictA}}",
           "<span>{{predictB}}</span>",
           "<span>{{predictC}}</span>"
       ]
     }
             <button id="back-button">Try again!</button>
             </pre>
-        </div>
         </main> 
 
         <!-- Scripts --> 
@@ -44,7 +42,7 @@ Your Future : {
         <script src='bower_components/angular-route/angular-route.js'></script> 
         <script src='bower_components/angularjs-typed-effect/dist/typed-effect.min.js'></script> 
         <script src="script.js"></script>
-        <script src="personnummer.js"></script>
+        <script src="personnummer.min.js"></script>
     </body>
 </html>
 
