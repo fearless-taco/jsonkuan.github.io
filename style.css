@@ -10,6 +10,8 @@ label, p {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/* General */ 
+
 body{
     background-color:#272822;
     color:#f8f8f0;
@@ -19,11 +21,7 @@ body{
 }
 
 pre, a, span{
-    font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
-}
-
-div#content {
-
+    font-family: Menlo,Courier,monospace;
 }
 
 a, span#my-name {
@@ -44,16 +42,7 @@ a:hover {
     z-index: 1;
 }
 
-#resume-img {
-    height: 70%;
-    width: 70%;
-    margin-top: 10%;
-    position: relative; 
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 10px; 
-}
-
+/* HOME PAGE */ 
 .text-center{
     text-align:center
 }
@@ -96,22 +85,20 @@ a:hover {
     margin-left:auto;
     margin-right:auto
 }
+/* Resume - CV */
 
-.hl.string{color:#e6db74}
-
-
-form, section {
-    color: black;
-    text-align: center;
+#resume-img {
+    height: 70%;
+    width: 70%;
+    margin-top: 10%;
+    position: relative; 
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px; 
 }
+/* Forms */ 
 
-div[class*="bg__"]{
-    border: solid;
-    margin-bottom: 15px;
-    margin-right 10px;
-}
-
-h1 {
+h1#fortunummer {
     position: absolute;
     margin-left: 5%;
     color: white; 
@@ -120,30 +107,11 @@ h1 {
     z-index: 1;
 } 
 
-
 main#content, section#form-result {
     position: fixed; 
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-}
-
-button#eightball-button {
-    background: transparent;
-    border: none; 
-    margin-left: 50%;
-    margin-top: 20px;
-    transform: translate(-50%);
-}
-
-button#eightball-button:hover {
-    border-style: inset;
-    border-radius: 40px;
-}
-
-section#form-result {
-    left: 0;
-    display: none;
 }
 
 .form-position {
@@ -162,12 +130,29 @@ input#input {
     transform: translate(-50%);
 }
 
-
-.footer-image {
-    width: 50%;
-    position: absolute;
+button#eightball-button {
+    background: transparent;
+    border: none; 
+    margin-left: 50%;
+    margin-top: 20px;
     transform: translate(-50%);
-} 
+}
+
+button#eightball-button:hover {
+    border-style: inset;
+    border-radius: 40px;
+}
+
+form, section {
+    color: black;
+    text-align: center;
+}
+
+section#form-result {
+    left: 0;
+    display: none;
+}
+
 
 /*Parallax Effect */
 [class*="bg__"] {
@@ -176,9 +161,11 @@ input#input {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    &:nth-child(2n) {
-        box-shadow: inset 0 0 1em #111;
-    }
+}
+
+div[class*="bg__"]{
+    border: solid;
+    margin-bottom: 15px;
 }
 
 .parallax [class*="bg__"] {
@@ -210,11 +197,11 @@ input#input {
     );
 }
 
-.bg__blue{
-    background-size: cover;
-    background-image: url(
-    "images/blue.png  "
-    );
-}
+.footer-image {
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%);
+} 
+
 
 
