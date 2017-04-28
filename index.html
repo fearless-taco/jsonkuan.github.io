@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <link href="bower_components/angularjs-typed-effect/dist/typed-effect.min.css" rel="stylesheet">
         <title>Software Engineer || iOS Developer</title>
     </head>
     <body ng-controller="HomeController">
         <!-- Directive <jsonk-hello-world></jsonk-hello-world> --> 
+        <a href="javascript:window.location.href=window.location.href"><img id="back-home" src="images/home_white.svg" alt="Back"/></a> 
         <ng-view></ng-view>
 
         <main id="content">
@@ -18,10 +20,9 @@
             <button id="eightball-button" type="submit">
                 <img src="images/eightball.png" width="100" height="100" alt="Tell Fortune!" />
             </button>
-
         </form>
 
-        <div ng-controller="HomeController">
+        <div ng-controller="FortuController">
             <pre id="form-result">
 Your Future : {
         Birthday : "<span id="birthday-result"></span>",
@@ -33,16 +34,15 @@ Your Future : {
           "<span>{{predictC}}</span>"
       ]
     }
-            <button id="back-button">Back</button>
+            <button id="back-button">Try again!</button>
             </pre>
         </div>
-
-
         </main> 
 
         <!-- Scripts --> 
         <script src='bower_components/angular/angular.js'></script>
         <script src='bower_components/angular-route/angular-route.js'></script> 
+        <script src='bower_components/angularjs-typed-effect/dist/typed-effect.min.js'></script> 
         <script src="script.js"></script>
         <script src="personnummer.js"></script>
     </body>

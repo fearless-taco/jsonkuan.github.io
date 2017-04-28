@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute','angularJSTypedEffect']);
 
 app.config(function ($routeProvider) {
     $routeProvider.when('/projects', {
