@@ -5,7 +5,6 @@ app.config(function ($routeProvider) {
         controller: 'ProjectsController',
         templateUrl: 'partials/projects.html'
     }).when('/resume', {
-        controller: 'CVController',
         templateUrl: 'partials/resume.html'
     }).otherwise({
         controller: 'HomeController',
@@ -14,32 +13,22 @@ app.config(function ($routeProvider) {
 });
 
 /* CONTROLLERS */
-app.controller('HomeController',['$scope',  function($scope) {
+app.controller('HomeController',['$scope', '$rootScope', function($scope, $rootScope) {
     $scope.x = function() {
         document.getElementById('pnum-form').style.display = "block"
         document.getElementById('json-content').style.display = "none"
-
-    }
-    $scope.y = function() {
-       $rootScope.seeFortune = false;
-       alert("false");
-    }
+    };
 }]);
 
-app.controller('ProjectsController', ['$scope', '$rootscope', function($scope, $rootScope) {
+app.controller('ProjectsController',['$scope', '$rootScope', function($scope, $rootScope) {
     //Implement this...
 }]);
-
-app.controller('CVController', ['$scope', '$rootscope', function($scope, $rootScope) {
-    //Implement this...
-}]);
-
 
 /* DIRECTIVES */
-app.directive('jsonkHelloWorld', function() {
+app.directive('jsonkDirective', function() {
     return {
-        template: "Directive: Hello {{x}}!"
-    };
+        template: "COMING SOON...!"
+   };
 });
 
 

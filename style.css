@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-.font-kaushan-script {
-    font-family:'Kaushan Script', cursive;
-}
-
-/* Font-Stacking */
-label, p {
-    font-family: fantasy, monospace, sans-serif;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
 /* General */ 
 
 body{
@@ -96,8 +84,19 @@ a:hover, span#fortunummerToggle:hover {
     transform: translate(-50%);
     border-radius: 10px; 
 }
-/* Forms */ 
 
+/* Directive */
+#projects {
+    position:absolute;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Forms */ 
 h1#fortunummer {
     position: absolute;
     margin-left: 5%;
@@ -107,11 +106,8 @@ h1#fortunummer {
     z-index: 1;
 } 
 
-main#content, section#form-result {
+main#content {
     position: fixed; 
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
 }
 
 form#pnum-form{
@@ -143,7 +139,7 @@ button#eightball-button:hover {
     border-radius: 40px;
 }
 
-form, section {
+form {
     color: black;
     text-align: center;
 }
@@ -159,7 +155,7 @@ pre#form-result {
     transform: translate(-50%, -75%);
     padding: 0 0 32% 0;
     font-size: 2.5vw;
-    color: #31322;
+    color: white;
 }
 
 pre > span {
