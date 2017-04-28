@@ -20,16 +20,16 @@ body{
     margin:0
 }
 
-pre, a, span{
+pre, a, span, label{
     font-family: Menlo,Courier,monospace;
 }
 
-a, span#my-name {
+a, span#my-name, span#fortunummerToggle {
     color:#66d9ef;
     text-decoration:none
 }
 
-a:hover {
+a:hover, span#fortunummerToggle:hover {
     color:#f92672
 }
 
@@ -114,14 +114,14 @@ main#content, section#form-result {
     transform: translate(-50%, -50%);
 }
 
+form#pnum-form{
+    display: none;
+}
+
 .form-position {
-    background-color: rgb(35 33 50);
-    border: solid;
-    border-radius: 10px; 
     margin-left: 50%;
-    padding: 20px 20px 20px 20px;
     width: 250px;
-    margin-top: 10%;
+    margin-top: -50%;
     transform: translate(-50%);
 }
 
@@ -148,9 +148,22 @@ form, section {
     text-align: center;
 }
 
-section#form-result {
-    left: 0;
+pre#form-result {
+    text-align: left;
     display: none;
+    position: absolute;
+    text-align: left;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+    padding: 0 0 32% 0;
+    font-size: 2.5vw;
+    color: #31322;
+}
+
+pre > span {
+    color: #FF5D5D;
 }
 
 
