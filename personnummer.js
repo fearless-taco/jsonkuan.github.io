@@ -26,8 +26,7 @@ function setResult(data) {
     document.getElementById('birthday-result').innerText = data.isBday ? "Yes" : "Not today!";
     document.getElementById('age-result').innerText = (calculateAge(data.pnum));
     data.isValidPNum = controlCheck(data.pnum);
-    document.getElementById('valid-input-result').innerText =
-        data.isValidPNum ?  "Truthy" : "Falsy" ;
+    document.getElementById('valid-input-result').innerText = data.isValidPNum ?  "Truthy" : "Falsy" ;
 }
 
 var hide = function() {
