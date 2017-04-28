@@ -1,3 +1,4 @@
+
 /* General */ 
 
 body{
@@ -139,8 +140,14 @@ button#eightball-button:hover {
     border-radius: 40px;
 }
 
+#back-button {
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-family: Menlo; 
+}
+
 form {
-    color: black;
+    color: white;
     text-align: center;
 }
 
