@@ -12,7 +12,6 @@ function formController() {
     document.getElementById('pnum-form').onsubmit = function() {
         hide();
         setResult(getData());
-        console.log(controlCheck(data.pnum));
         return false;
     }
 }
@@ -24,11 +23,11 @@ function getData() {
 }
 
 function setResult(data) {
-    document.getElementById('age-result').innerText = "In exaclty five years from today will be " + (calculateAge(data.pnum) + 5) + " years old.";
-    document.getElementById('birthday-result').innerText = data.isBday ? "In eight years from today it will be your birthday!" : "Your birthday will never be on this day!";
+    document.getElementById('birthday-result').innerText = data.isBday ? "Yes" : "Not today!";
+    document.getElementById('age-result').innerText = (calculateAge(data.pnum));
     data.isValidPNum = controlCheck(data.pnum);
     document.getElementById('valid-input-result').innerText =
-        data.isValidPNum ?  "You will manage to write your personnummer correctly at some point in the future." : "You will ammount to nothing. You cant even write your personnnumerm correcty!" ;
+        data.isValidPNum ?  "Truthy" : "Falsy" ;
 }
 
 var hide = function() {
