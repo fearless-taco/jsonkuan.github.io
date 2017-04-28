@@ -10,10 +10,41 @@
         <!-- Directive <jsonk-hello-world></jsonk-hello-world> --> 
         <ng-view></ng-view>
 
+        <main id="content">
+        <form id="pnum-form" class="form-position" method="post" action="#">
+            <label id="inputLabel" for="personnummer">Enter Personnummer </label> <br />
+            <input id="input" ng-model="a" type="text" 
+                       required maxLength="13" pattern=".{13,13}" placeholder="yyyymmdd-xxxx"  />       
+            <button id="eightball-button" type="submit">
+                <img src="images/eightball.png" width="100" height="100" alt="Tell Fortune!" />
+            </button>
+
+        </form>
+
+        <div ng-controller="HomeController">
+            <pre id="form-result">
+Your Future : {
+        Birthday : "<span id="birthday-result"></span>",
+        Age : "<span id="age-result">-</span>", 
+        isValid : "<span id="valid-input-result">-</span>", 
+        Predictions : [
+          "<span>{{predictA}}</span>",
+          "<span>{{predictB}}</span>",
+          "<span>{{predictC}}</span>"
+      ]
+    }
+            <button id="back-button">Back</button>
+            </pre>
+        </div>
+
+
+        </main> 
+
         <!-- Scripts --> 
         <script src='bower_components/angular/angular.js'></script>
         <script src='bower_components/angular-route/angular-route.js'></script> 
         <script src="script.js"></script>
+        <script src="personnummer.js"></script>
     </body>
 </html>
 
