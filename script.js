@@ -4,9 +4,12 @@ app.config(function ($routeProvider) {
     $routeProvider.when('/projects', {
         controller: 'ProjectsController',
         templateUrl: 'partials/projects.html'
-    }).when('/resume', {
+    }).when('/resume_en', {
         controller: 'CVController',
-        templateUrl: 'partials/resume.html'
+        templateUrl: 'partials/resume_en.html'
+    }).when('/resume_sv', {
+        controller: 'CVController',
+        templateUrl: 'partials/resume_sv.html'
     }).otherwise({
         controller: 'HomeController',
         templateUrl: 'partials/home.html'
@@ -14,15 +17,13 @@ app.config(function ($routeProvider) {
 });
 
 app.run(function($rootScope) {
-    $rootScope.instructions = "Hello Jon!";
+    $rootScope.instructions = "Hello Petter!";
 });
 
 /* CONTROLLERS */
 app.controller('HomeController',['$scope', '$rootScope', function($scope, $rootScope) {
 
-    $rootScope.instructions = "Try clicking json values!";
     $scope.x = function() {
-        document.getElementById('pnum-form').style.display = "block"
         document.getElementById('json-content').style.display = "none"
     };
 }]);

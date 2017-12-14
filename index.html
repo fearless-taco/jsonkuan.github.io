@@ -8,32 +8,10 @@
         <title>Software Engineer || iOS Developer</title>
     </head>
     <body ng-controller="HomeController">
-        <!-- Directive <jsonk-hello-world></jsonk-hello-world> --> 
         <a href="javascript:window.location.href=window.location.href"><img id="back-home" src="images/home_white.svg" alt="Back"/></a> 
         <ng-view></ng-view>
 
         <main id="content" class="centered">
-        <form id="pnum-form" class="form-position" method="post" action="#">
-            <label id="inputLabel" for="personnummer">Enter Personnummer </label> <br />
-            <input id="input" ng-model="a" type="text" 
-                       required maxLength="13" pattern=".{13,13}" placeholder="yyyymmdd-xxxx"  />       
-            <button id="eightball-button" type="submit">
-                <img src="images/eightball.png" width="100" height="100" alt="Tell Fortune!" />
-            </button>
-        </form>
-
-            <pre id="form-result" class="centered">
-Your Future : {
-        Birthday : "<span id="birthday-result"></span>",
-        Age : "<span id="age-result">-</span>", 
-        isValid : "<span id="valid-input-result">-</span>", 
-        Predictions : [
-          "<span>One Day I'll tell your future</span>",
-          "<span>But not today..</span>"
-      ]
-    }
-            <button id="back-button">Try again!</button>
-            </pre>
         </main> 
 
         <footer>
@@ -44,7 +22,6 @@ Your Future : {
         <script src='bower_components/angular-route/angular-route.js'></script> 
         <script src='bower_components/angularjs-typed-effect/dist/typed-effect.min.js'></script> 
         <script src="script.js"></script>
-        <script src="personnummer.min.js"></script>
     </body>
 </html>
 
