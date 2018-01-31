@@ -68,9 +68,15 @@
                 </g>
             </g>
             <g id="CV_EN" transform="translate(130.000000, 151.000000)">
-                <g id="Footer" transform="translate(56.000000, 1074.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                <g id="Footer" transform="translate(78.000000, 1075.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                    <text id="E:-jsonkuan@gmail.co">
+                        <tspan x="285.534" y="12">E: jsonkuan@gmail.com </tspan>
+                    </text>
+                    <text id="T:-0727323221">
+                        <tspan x="188.086" y="12">T:  0727323221</tspan>
+                    </text>
                     <text id="A:-Björcksgatan-34D,">
-                        <tspan x="21.312" y="12">A: Björcksgatan 34D, Göteborg      T:  0727323221      E: jsonkuan@gmail.com </tspan>
+                        <tspan x="5.692" y="12">A: Björcksgatan 34D, Göteborg     </tspan>
                     </text>
                 </g>
                 <g id="Skills" transform="translate(40.000000, 779.000000)">
@@ -111,18 +117,41 @@
                             <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-9"></use>
                         </g>
                     </g>
-                    <text id="objC-Swift-Xcode" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400" fill="#FFFFFF">
-                        <tspan x="183" y="93">objC   	               Swift               Xcode</tspan>
-                    </text>
-                    <text id="AndroidStudio-java" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400" fill="#FFFFFF">
-                        <tspan x="170" y="134">AndroidStudio        java</tspan>
-                    </text>
-                    <text id="javascript-html/css" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400" fill="#FFFFFF">
-                        <tspan x="183" y="173">javascript     	      html/css</tspan>
-                    </text>
-                    <text id="Swedish-English" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400" fill="#FFFFFF">
-                        <tspan x="347" y="211">Swedish 	English</tspan>
-                    </text>
+                    <g id="Language" transform="translate(363.000000, 199.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                        <text id="English">
+                            <tspan x="47" y="12">English</tspan>
+                        </text>
+                        <text id="Swedish">
+                            <tspan x="0" y="12">Swedish</tspan>
+                        </text>
+                    </g>
+                    <g id="Web" transform="translate(183.000000, 161.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                        <text id="javascript">
+                            <tspan x="0" y="12">javascript</tspan>
+                        </text>
+                        <text id="html/css">
+                            <tspan x="102" y="12">html/css</tspan>
+                        </text>
+                    </g>
+                    <g id="Android" transform="translate(170.000000, 122.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                        <text id="AndroidStudio">
+                            <tspan x="0" y="12">AndroidStudio </tspan>
+                        </text>
+                        <text id="java">
+                            <tspan x="90" y="12">java</tspan>
+                        </text>
+                    </g>
+                    <g id="iOS" transform="translate(255.000000, 81.000000)" fill="#FFFFFF" font-family="AvenirNext-Medium, Avenir Next" font-size="12" font-weight="400">
+                        <text id="objC">
+                            <tspan x="0" y="12">objC</tspan>
+                        </text>
+                        <text id="Swift">
+                            <tspan x="59" y="12">Swift</tspan>
+                        </text>
+                        <text id="Xcode">
+                            <tspan x="91" y="12">Xcode</tspan>
+                        </text>
+                    </g>
                     <text id="Title" font-family="AvenirNext-Medium, Avenir Next" font-size="18" font-weight="400" fill="#FFFFFF">
                         <tspan x="220.69" y="18.9482534">SKILLS</tspan>
                     </text>

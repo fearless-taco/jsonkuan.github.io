@@ -1938,6 +1938,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+        margin-left: 8em;
 	}
 
 		.image img {
@@ -1961,9 +1962,9 @@
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+            width: 100%;
+		}
 
 		.image.fit {
 			display: block;
@@ -1971,9 +1972,17 @@
 			width: 100%;
 		}
 
-			.image.fit img {
-				width: 100%;
-			}
+		.image.fit img {
+			width: 100%;
+        }
+
+        
+        @media screen and (max-width: 736px) {
+            
+            .image {
+                margin-left: 3em;   
+            }
+        }
 
 /* List */
 
@@ -3854,6 +3863,7 @@
 
 	h2.centered  {
 		text-align: center;
+        font-size: 0.9em;
 	}
 
 /* Video */
@@ -3869,6 +3879,8 @@
 		padding-top: 1.3em;
 		padding-bottom: 1.3em;
 		height: 32em;	
+        width: 100%;
+        padding-right: 5.6em;
 	}
 
 	#container{
@@ -3910,7 +3922,7 @@
 	}
 
 	.modalDialog > div {
-		width: 50em;
+		width: 80%;
 		position: relative;
 		margin: 10% auto;
 		padding: 5px 20px 13px 20px;
@@ -3942,20 +3954,83 @@
 		background: #00d9ff;
 	 }
 
-		@media screen and (max-width: 736px) {
+     
+        @media screen and (min-width: 1681px) {
 			
-			.modalDialog {
-				width: 80%;
-			}
+			.modalDialog h2 {
+               font-size: 2em; 
+            }
+
+            .modalDialog div {
+                width: 50%;
+            }
+        }
+        
+		@media screen and (max-width: 1680px) {
 			
-			.json-content {
-				font-size: 1.5em;
-			}
-		}
+			.modalDialog h2 {
+               font-size: 2em;
+            }
+            
+            .modalDialog div {
+                width: 50%;
+            } 
+        }
+       
+        @media screen and (max-width: 1280px) {
+			
+			.modalDialog h2 {
+               font-size: 1.6em
+            } 
+        }
+        @media screen and (max-width: 1024px) {
+			
+			.modalDialog h2 {
+               font-size: 1.4em
+            } 
+        }
+        
+        @media screen and (max-width: 736px) {
+			
+			.modalDialog h2 {
+               font-size: 1em
+            }
+            
+            .modalDialog div {
+                width: 90%; 
+            } 
+        }
+        
+        @media screen and (max-width: 436px) {
+			
+			.modalDialog h2 {
+               font-size: 0.7em
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            
+            .video {
+                height: 31em;
+            }
+
+            .frame {
+                height: 33em;
+            }
+            
+        }
+    
+     div.containerCenter {
+        position: relative;
+    }
+
+    .contactInfo {
+        width: 50%;
+    }
 
 /* TypeWriter */
 
-	.typewriter h1 {
+	.typewriter h2 {
 	  overflow: hidden; /* Ensures the content is not revealed until the animation */
 	  border-right: .15em solid orange; /* The typwriter cursor */
 	  white-space: nowrap; /* Keeps the content on a single line */
